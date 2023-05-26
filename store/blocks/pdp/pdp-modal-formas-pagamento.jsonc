@@ -1,0 +1,318 @@
+{
+  "flex-layout.row#pdp-formas-pagamento-container": {
+    "title": "Formas de pagamento",
+    "children": [
+      "modal-trigger#pdp-formas-pagamento"
+      // "button-nsubscribe"
+    ],
+    "props": {
+      "blockClass": "pdp-formas-pagamento-flex"
+    }
+  },
+  "modal-trigger#pdp-formas-pagamento": {
+    "children": [
+      "rich-text#pdp-formas-pagamento",
+      "modal-layout#pdp-formas-pagamento"
+    ]
+  },
+  "rich-text#pdp-formas-pagamento": {
+    "title": "Formas de pagamento",
+    "props": {
+      "text": "Formas de pagamento",
+      "blockClass": "pdp-formas-pagamento"
+    }
+  },
+  "modal-layout#pdp-formas-pagamento": {
+    "title": "Modal formas de pagamento",
+    "children": [
+      "modal-header#pdp-formas-pagamento",
+      "tab-layout#pdp-formas-pagamento"
+    ],
+    "props": {
+      "fullScreen": {
+        "desktop": false,
+        "mobile": true
+      },
+      "blockClass": "pdp-formas-pagamento"
+    }
+  },
+  "modal-header#pdp-formas-pagamento": {
+    "children": ["rich-text#pdp-formas-pagamento"],
+    "props": {
+      "showCloseButton": true,
+      "blockClass": "pdp-formas-pagamento"
+    }
+  },
+  "tab-layout#pdp-formas-pagamento": {
+    "children": [
+      "tab-list#pdp-formas-pagamento",
+      "tab-content#pdp-formas-pagamento"
+    ],
+    "props": {
+      "blockClass": "pdp-formas-pagamento",
+      "defaultActiveTabId": "pdp-formas-pagamento1"
+    }
+  },
+  "tab-list#pdp-formas-pagamento": {
+    "title": "Lista de tabs",
+    "children": [
+      "tab-list.item#pdp-formas-pagamento1",
+      "tab-list.item#pdp-formas-pagamento2",
+      "tab-list.item#pdp-formas-pagamento3",
+      "tab-list.item#pdp-formas-pagamento4",
+      "tab-list.item#pdp-formas-pagamento5",
+      "tab-list.item#pdp-formas-pagamento6"
+    ]
+  },
+  "tab-list.item#pdp-formas-pagamento1": {
+    "title": "Tab 1 -Cartão",
+    "props": {
+      "tabId": "pdp-formas-pagamento1",
+      "label": "Cartão",
+      "defaultActiveTab": true
+    }
+  },
+  "tab-list.item#pdp-formas-pagamento2": {
+    "title": "Tab 2 - Boleto",
+    "props": {
+      "tabId": "pdp-formas-pagamento2",
+      "label": "Boleto"
+    }
+  },
+  "tab-list.item#pdp-formas-pagamento3": {
+    "title": "Tab 3 - PayMee",
+    "props": {
+      "tabId": "pdp-formas-pagamento3",
+      "label": "PayMee"
+    }
+  },
+  "tab-list.item#pdp-formas-pagamento4": {
+    "title": "Tab 4 - Ame",
+    "props": {
+      "tabId": "pdp-formas-pagamento4",
+      "label": "Ame"
+    }
+  },
+  "tab-list.item#pdp-formas-pagamento5": {
+    "title": "Tab 5 - Pix",
+    "props": {
+      "tabId": "pdp-formas-pagamento5",
+      "label": "Pix"
+    }
+  },
+  "tab-content#pdp-formas-pagamento": {
+    "children": [
+      "tab-content.item#pdp-formas-pagamento1",
+      "tab-content.item#pdp-formas-pagamento2",
+      "tab-content.item#pdp-formas-pagamento3",
+      "tab-content.item#pdp-formas-pagamento4",
+      "tab-content.item#pdp-formas-pagamento5",
+      "tab-content.item#pdp-formas-pagamento6"
+    ]
+  },
+  "tab-content.item#pdp-formas-pagamento1": {
+    "title": "Conteúdo - tab 1",
+    "children": [
+      "installments-product-pdp",
+      "flex-layout.row#pdp-formas-pagamento-cartoes",
+      "rich-text#pdp-formas-pagamento-cartao"
+    ],
+    "props": {
+      "tabId": "pdp-formas-pagamento1"
+    }
+  },
+  "flex-layout.row#pdp-formas-pagamento-cartoes": {
+    "title": "Icons dos cartões",
+    "children": [
+      "image#pdp-formas-pagamento-cartao1",
+      "image#pdp-formas-pagamento-cartao2",
+      "image#pdp-formas-pagamento-cartao3",
+      "image#pdp-formas-pagamento-cartao4",
+      "image#pdp-formas-pagamento-cartao5"
+    ],
+    "props": {
+      "blockClass": "pdp-formas-pagamento-cartoes"
+    }
+  },
+  "image#pdp-formas-pagamento-cartao1": {
+    "title": "Cartão 1",
+    "props": {
+      "src": "/arquivos/c-rd-mastercard-seeklogo.png?v=637455373136530000"
+    }
+  },
+  "image#pdp-formas-pagamento-cartao2": {
+    "title": "Cartão 2",
+    "props": {
+      "src": "/arquivos/c-rd-visaMethod.png?v=637455373207330000"
+    }
+  },
+  "image#pdp-formas-pagamento-cartao3": {
+    "title": "Cartão 3",
+    "props": {
+      "src": "/arquivos/c-rd-eloMethod.png?v=637455373115830000"
+    }
+  },
+  "image#pdp-formas-pagamento-cartao4": {
+    "title": "Cartão 4",
+    "props": {
+      "src": "/arquivos/c-rd-dinersclub.png?v=637455373114100000"
+    }
+  },
+  "image#pdp-formas-pagamento-cartao5": {
+    "title": "Cartão 5",
+    "props": {
+      "src": "/arquivos/c-rd-americanexpress.png?v=637455372895400000"
+    }
+  },
+  "rich-text#pdp-formas-pagamento-cartao": {
+    "title": "Cartão infos",
+    "props": {
+      "text": "*Descontos aplicados na Loja Online Motorola não são válidos para a modalidade de retirada em loja. \n\n Descontos à vista não são válidos para a forma de pagamento Ame.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "pdp-formas-pagamento-cartao"
+    }
+  },
+  "tab-content.item#pdp-formas-pagamento2": {
+    "title": "Conteúdo - tab 2",
+    "children": [
+      // "product-spot-price-savings#pdp-formas-pagamento",
+      "flex-layout.row#pdp-formas-pagamento",
+      "rich-text#pdp-formas-pagamento-boleto"
+    ],
+    "props": {
+      "tabId": "pdp-formas-pagamento2"
+    }
+  },
+  "flex-layout.row#pdp-formas-pagamento": {
+    "children": [
+      "product-spot-price-savings#pdp-formas-pagamento"
+      // "flag-promotion"
+    ],
+    "props": {
+      "blockClass": "pdp-formas-pagamento-container"
+    }
+  },
+  "product-spot-price-savings#pdp-formas-pagamento": {
+    "props": {
+      "message": "{newSpotPriceValue}",
+      "blockClass": "pdp-formas-pagamento"
+    }
+  },
+  "rich-text#pdp-formas-pagamento-boleto": {
+    "title": "Texto boleto",
+    "props": {
+      "text": "Aproveite nosso desconto à vista para compras via boleto bancário e garanta já o seu novo motorola. O boleto bancário será exibido após a confirmação da compra e poderá ser pago em qualquer agência bancária ou internet. Compras realizadas via boleto não podem ser parceladas.",
+      "blockClass": "pdp-formas-pagamento-modal"
+    }
+  },
+  "tab-content.item#pdp-formas-pagamento3": {
+    "title": "Conteúdo - tab 3",
+    "children": [
+      "flex-layout.row#pdp-formas-pagamento",
+      "rich-text#pdp-formas-pagamento-paymee",
+      "image#pdp-formas-pagamento-paymee-1",
+      "image#pdp-formas-pagamento-paymee-2"
+    ],
+    "props": {
+      "tabId": "pdp-formas-pagamento3",
+      "blockClass": "pdp-formas-pagamento3"
+    }
+  },
+  "rich-text#pdp-formas-pagamento-paymee": {
+    "title": "Texto PayMee",
+    "props": {
+      "text": "Pague com depósito ou transferência em um dos bancos parceiros.",
+      "blockClass": "pdp-formas-pagamento-modal"
+    }
+  },
+  "image#pdp-formas-pagamento-paymee-1": {
+    "title": "PayMee - Imagem 1",
+    "props": {
+      "src": "/arquivos/paymee-payments-checkout.png?v=637455373688200000",
+      "blockClass": "pdp-formas-pagamento-paymee"
+    }
+  },
+  "image#pdp-formas-pagamento-paymee-2": {
+    "title": "PayMee - Imagem 2",
+    "props": {
+      "src": "/arquivos/paymee-logo-checkout.png?v=637455373686500000",
+      "blockClass": "pdp-formas-pagamento-paymee"
+    }
+  },
+  "tab-content.item#pdp-formas-pagamento4": {
+    "title": "Conteúdo - tab 4",
+    "children": [
+      "rich-text#pdp-formas-pagamento-ame",
+      "image#pdp-formas-pagamento-ame"
+    ],
+    "props": {
+      "tabId": "pdp-formas-pagamento4"
+    }
+  },
+  "rich-text#pdp-formas-pagamento-ame": {
+    "title": "Texto Ame",
+    "props": {
+      "text": "### Um novo jeito de pagar e ganhar cashback. \n #### O app gratuito que você paga suas compras, ganha dinheiro de volta e ainda parcela em até 12 vezes sem juros. \n ### Pague com o celular pelo app Ame Digital. \n #### 1. Baixe o app Ame Digital. \n #### 2. Crie uma conta e cadastre seu cartão. \n #### 3. Clique em “pagar” e escaneie o QR code.",
+      "blockClass": "pdp-formas-pagamento-ame"
+    }
+  },
+  "image#pdp-formas-pagamento-ame": {
+    "title": "Imagem Ame",
+    "props": {
+      "src": "/arquivos/c-rd-ame.png?v=637455372893700000",
+      "blockClass": "pdp-formas-pagamento-ame"
+    }
+  },
+  "tab-content.item#pdp-formas-pagamento5": {
+    "title": "Conteúdo - tab 5",
+    "children": [
+      "flex-layout.row#pdp-formas-pagamento",
+      "rich-text#pdp-formas-pagamento-pix"
+    ],
+    "props": {
+      "tabId": "pdp-formas-pagamento5"
+    }
+  },
+  "rich-text#pdp-formas-pagamento-pix": {
+    "title": "Pix - Texto infos",
+    "props": {
+      "text": "### Um novo jeito de pagar \n #### Agora suas compras na Loja Online Motorola podem ser pagas com Pix, em qualquer dia e horário. O pagamento é instantâneo, prático e é feito em poucos segundos. Super rápido e seguro! \n ### Veja como é simples \n #### 1. Finalize sua compra e abra o app do banco na opção Pix; \n #### 2. Aponte a câmera do celular para o QRcode ou copie e cole o código no app do banco; \n #### 3. Confira os dados e confirme seu pagamento pelo app do banco. \n #### 4. Prontinho, agora é só esperar o e-mail de confirmação.",
+      "blockClass": "pdp-formas-pagamento-ame"
+    }
+  },
+
+  "tab-list.item#pdp-formas-pagamento6": {
+    "title": "Tab 6 - PicPay",
+    "props": {
+      "tabId": "pdp-formas-pagamentopicpay6",
+      "label": "PicPay"
+    }
+  },
+  "tab-content.item#pdp-formas-pagamento6": {
+    "title": "Conteúdo - tab 6",
+    "children": [
+      "flex-layout.row#pdp-formas-pagamento",
+      "rich-text#pdp-formas-pagamento-picpay",
+      "image#pdp-formas-pagamento-picpay"
+    ],
+    "props": {
+      "tabId": "pdp-formas-pagamentopicpay6",
+      "blockClass": "formas-pagamento-picpay"
+    }
+  },
+  "rich-text#pdp-formas-pagamento-picpay": {
+    "title": "Texto PicPay",
+    "props": {
+      "text": "### Pague com PicPay, direto do seu celular. \n #### Ao finalizar a compra, um código será exibido. Para pagar, basta escanear <br> o código com seu PicPay. \n\n #### Ainda não tem conta?<br> Baixe o app gratuitamente no Android ou iPhone.",
+      "blockClass": "pdp-formas-pagamento-ame"
+    }
+  },
+  "image#pdp-formas-pagamento-picpay": {
+    "title": "Imagem PicPay",
+    "props": {
+      "src": "/arquivos/picpay-logo-2.png",
+      "blockClass": "pdp-formas-pagamento-ame"
+    }
+  }
+}
